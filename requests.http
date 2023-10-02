@@ -1,0 +1,29 @@
+GET http://localhost:8080/alunos
+
+###
+POST http://localhost:8080/alunos
+Content-Type: application/json
+
+{
+  "nome": "Ana Julia",
+  "rg": "234598721",
+  "cpf": "12332112347"
+}
+
+###
+GET http://localhost:8080/alunos/2
+
+###
+DELETE http://localhost:8080/alunos/1
+
+###
+PATCH http://localhost:8080/alunos/6
+Content-Type: application/json
+
+{
+  "cpf": "11122233344",
+  "rg": "123456789"
+}
+
+###
+GET http://localhost:8080/alunos/cpf/123
